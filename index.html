@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hema Latha | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.7;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111c32;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 65px 10%;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span,
+        .section-title {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 22px;
+            background: #38bdf8;
+            color: #0f172a;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section-title {
+            margin-bottom: 22px;
+            font-size: 30px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 9px 14px;
+        }
+
+        footer {
+            background: #111c32;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Hema Latha</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hello, I'm <span>Hema Latha</span></h1>
+
+        <p>
+            I am a B.Tech Computer Science Engineering student
+            interested in Data Analytics, Artificial Intelligence
+            and creative technology projects. I am learning new
+            skills and building practical projects to grow my career.
+        </p>
+
+        <a href="#projects" class="button">Explore My Projects</a>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+            <p>
+                I am a Computer Science Engineering student who enjoys
+                learning about technology and solving problems through
+                practical projects. My current interests include data
+                analytics, artificial intelligence and digital creativity.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills & Interests</h2>
+
+        <div class="skills">
+            <span>Python — Learning</span>
+            <span>Data Analytics — Learning</span>
+            <span>Artificial Intelligence — Learning</span>
+            <span>Web Development — Learning</span>
+            <span>Content Creation</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="card">
+            <h3>InsightSphere AI</h3>
+
+            <p>
+                An intelligent data analytics and business intelligence
+                platform featuring KPI dashboards, customer analytics,
+                payment insights, alerts, recommendations and report
+                generation.
+            </p>
+
+            <p>
+                Technologies and project details will be documented
+                as the portfolio is developed.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Creative Digital Projects</h3>
+
+            <p>
+                A collection of creative content and AI-assisted digital
+                projects. Individual project details will be added here.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="card">
+            <h3>B.Tech — Computer Science Engineering</h3>
+            <p>PBR VITS</p>
+            <p>Expected Graduation: 2027</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="card">
+            <p>
+                For professional opportunities and collaboration,
+                please connect through my professional profiles.
+            </p>
+
+            <p>Email: Add a professional email when ready.</p>
+            <p>GitHub: Add your public GitHub profile link.</p>
+            <p>LinkedIn: Add your LinkedIn profile link.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Hema Latha | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
